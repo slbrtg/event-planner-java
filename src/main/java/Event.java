@@ -89,8 +89,8 @@ public class Event {
     if (mNumOfGuests > 1000 && mEntertainmentSelection.equals("MouseRat")){
       subFromCost(100);
       mDiscounts = 100;
-      return "100 bucks due MouseRat and high guests count";
-    } else if (mFoodSelection.equals("Taco truck") && mBevySelection.equals("Horchata") && mEntertainmentSelection.equals("Mariachi")){
+      return "100 bucks off due to choosing MouseRat with a high guests count";
+    } else if (mFoodSelection.equals("Taco Truck") && mBevySelection.equals("Horchata") && mEntertainmentSelection.equals("Mariachi")){
       subFromCost(500);
       mDiscounts = 500;
       return "South of the border combo saved you 500!";

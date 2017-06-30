@@ -19,7 +19,7 @@ public class App {
     System.out.println("In N Out Truck, 500");
     System.out.println("Taco Truck, 1000");
     System.out.println("Please select one of the below");
-    System.out.println("In N Out Truck : Taco Truck");
+    System.out.println("In N Out Truck  :  Taco Truck");
     String foodSelection  = listener.readLine();
     entertainment720.setFoodSelection(foodSelection);
     entertainment720.addFoodPriceToCost();
@@ -28,7 +28,7 @@ public class App {
     System.out.println("Peach Tea, 700");
     System.out.println("Horchata, 1200");
     System.out.println("Please select one of the below");
-    System.out.println("Peach Tea: Horchata");
+    System.out.println("Peach Tea  :  Horchata");
     String bevySelection  = listener.readLine();
     entertainment720.setBevySelection(bevySelection);
     entertainment720.addBevyPriceToCost();
@@ -37,12 +37,13 @@ public class App {
     System.out.println("Detlef Shrempf hooping, 20");
     System.out.println("MouseRat, 35");
     System.out.println("Mariachi, 75");
+    System.out.println("Mariachi  :  MouseRat  :  Detlef Shrempf");
     String entertainmentSelection = listener.readLine();
     entertainment720.setEntertainmentSelection(entertainmentSelection);
     entertainment720.addEntertainmentPriceToCost();
 
 
-    entertainment720.applyDiscounts();
+    System.out.println(entertainment720.applyDiscounts());
     System.out.println("Your total is " + entertainment720.getCost());
   }
 }
