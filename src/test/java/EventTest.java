@@ -19,4 +19,20 @@ public class EventTest {
     assertEquals(expectedOutput, testEvent.getFoodSelection());
   }
 
+  @Test
+  public void setgetBevySelection_returnBevySelection_PeachTea(){
+    String expectedOutput = "Peach Tea";
+    Event testEvent = new Event();
+    testEvent.setBevySelection("Peach Tea");
+    assertEquals(expectedOutput, testEvent.getBevySelection());
+  }
+
+  @Test
+  public void setgetEntertainmentSelection_returnEntertainmentSelection_Music(){
+    String expectedOutput = "MouseRat";
+    Event testEvent = new Event();
+    testEvent.setEntertainmentSelection("MouseRat");
+    assertEquals(expectedOutput, testEvent.getEntertainmentSelection());
+  }
+
 }
