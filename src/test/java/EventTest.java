@@ -29,10 +29,27 @@ public class EventTest {
 
   @Test
   public void setgetEntertainmentSelection_returnEntertainmentSelection_Music(){
-    String expectedOutput = "MouseRat";
+    String expectedOutput = "Music";
     Event testEvent = new Event();
-    testEvent.setEntertainmentSelection("MouseRat");
+    testEvent.setEntertainmentSelection("Music");
     assertEquals(expectedOutput, testEvent.getEntertainmentSelection());
+  }
+
+  @Test
+  public void addgetCost_returnCost_10(){
+    int expectedOutput = 10;
+    Event testEvent = new Event();
+    testEvent.addToCost(10);
+    assertEquals(expectedOutput, testEvent.getCost());
+  }
+
+  @Test
+  public void addFoodPriceToCost_ReturnsCost_5(){
+    int expectedOutput = 5;
+    Event testEvent = new Event();
+    testEvent.setFoodSelection("In N Out");
+    testEvent.addFoodPriceToCost();
+    assertEquals(expectedOutput, testEvent.getCost());
   }
 
 }

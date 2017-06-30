@@ -36,4 +36,14 @@ public class Event {
   public void addToCost(int price){
     mCost += price;
   }
+  public int getCost(){
+    return mCost;
+  }
+
+  public void addFoodPriceToCost(){
+    if (mFoodSelection.equals("In N Out")){
+      addToCost(5);
+    }
+  }
+
 }
