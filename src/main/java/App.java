@@ -42,7 +42,7 @@ public class App {
     entertainment720.addEntertainmentPriceToCost();
 
 
-
+    entertainment720.applyDiscounts();
     System.out.println("Your total is " + entertainment720.getCost());
   }
 }
