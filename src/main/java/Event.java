@@ -85,13 +85,17 @@ public class Event {
     }
   }
 
-  public void applyDiscounts(){
+  public String applyDiscounts(){
     if (mNumOfGuests > 1000 && mEntertainmentSelection.equals("MouseRat")){
       subFromCost(100);
       mDiscounts = 100;
+      return "100 bucks due MouseRat and high guests count";
     } else if (mFoodSelection.equals("Taco truck") && mBevySelection.equals("Horchata") && mEntertainmentSelection.equals("Mariachi")){
       subFromCost(500);
       mDiscounts = 500;
+      return "South of the border combo saved you 500!";
+    } else {
+      return "No discounts :(";
     }
   }
 
