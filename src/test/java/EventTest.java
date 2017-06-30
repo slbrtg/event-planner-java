@@ -52,4 +52,13 @@ public class EventTest {
     assertEquals(expectedOutput, testEvent.getCost());
   }
 
+  @Test
+  public void addFoodPriceToCost_ReturnsCost_10(){
+    int expectedOutput = 10;
+    Event testEvent = new Event();
+    testEvent.setFoodSelection("Taco truck");
+    testEvent.addFoodPriceToCost();
+    assertEquals(expectedOutput, testEvent.getCost());
+  }
+
 }

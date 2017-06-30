@@ -36,13 +36,55 @@ public class Event {
   public void addToCost(int price){
     mCost += price;
   }
+  public void subFromCost(int price){
+    mCost += price;
+  }
   public int getCost(){
     return mCost;
   }
 
+
+  public void addGuestsPriceToCost(){
+    if (mNumOfGuests > 720){
+      addToCost(500);
+    } else if (mNumOfGuests > 300){
+      addToCost(1000);
+    } else {
+      addToCost(100);
+    }
+  }
+
   public void addFoodPriceToCost(){
     if (mFoodSelection.equals("In N Out")){
-      addToCost(5);
+      addToCost(500);
+    } else if (mFoodSelection.equals("Taco truck")){
+      addToCost(1000);
+    }
+  }
+
+  public void addBevyPriceToCost(){
+    if (mBevySelection.equals("Peach Tea")){
+      addToCost(700);
+    } else if (mBevySelection.equals("Horchata")){
+      addToCost(1200);
+    }
+  }
+
+  public void addEntertainmentPriceToCost(){
+    if (mEntertainmentSelection.equals("NBA Star Detlef Shrempf")){
+      addToCost(20);
+    } else if (mEntertainmentSelection.equals("MouseRat")){
+      addToCost(35);
+    } else if (mEntertainmentSelection.equals("Mariachi")){
+      addToCost(75);
+    }
+  }
+
+  public void applyDiscounts(){
+    if (mNumOfGuests > 1000 && mEntertainmentSelection.equals("MouseRat")){
+      subFromCost(100);
+    } else if (mFoodSelection.equals("Taco truck") && mBevySelection.equals("Horchata") && mEntertainmentSelection.equals("Mariachi")){
+      subFromCost(500);
     }
   }
 
