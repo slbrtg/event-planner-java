@@ -45,7 +45,7 @@ public class EventTest {
 
   @Test
   public void addFoodPriceToCost_ReturnsCost_5(){
-    int expectedOutput = 5;
+    int expectedOutput = 500;
     Event testEvent = new Event();
     testEvent.setFoodSelection("In N Out");
     testEvent.addFoodPriceToCost();
@@ -54,7 +54,7 @@ public class EventTest {
 
   @Test
   public void addFoodPriceToCost_ReturnsCost_10(){
-    int expectedOutput = 10;
+    int expectedOutput = 1000;
     Event testEvent = new Event();
     testEvent.setFoodSelection("Taco truck");
     testEvent.addFoodPriceToCost();

@@ -4,6 +4,7 @@ public class Event {
   private String mBevySelection;
   private String mEntertainmentSelection;
   private int mCost;
+  private int mDiscounts;
 
   public void setNumOfGuests(int numOfGuests){
     mNumOfGuests = numOfGuests;
@@ -41,6 +42,10 @@ public class Event {
   }
   public int getCost(){
     return mCost;
+  }
+
+  public int getDiscounts(){
+    return mDiscounts;
   }
 
 
@@ -83,8 +88,17 @@ public class Event {
   public void applyDiscounts(){
     if (mNumOfGuests > 1000 && mEntertainmentSelection.equals("MouseRat")){
       subFromCost(100);
+      mDiscounts = 100;
     } else if (mFoodSelection.equals("Taco truck") && mBevySelection.equals("Horchata") && mEntertainmentSelection.equals("Mariachi")){
       subFromCost(500);
+      mDiscounts = 500;
+    }
+  }
+
+  public void breakOrGo(String yesOrNo){
+    if (yesOrNo.equals("No")){
+      System.out.println("We'll see you next time :]");
+      System.exit(0);
     }
   }
 

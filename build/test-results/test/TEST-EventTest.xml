@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EventTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-06-30T21:54:18" hostname="/0:0:0:0:0:0:0:1%lo" time="0.004">
+<testsuite name="EventTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-06-30T23:04:24" hostname="/0:0:0:0:0:0:0:1%lo" time="0.004">
   <properties/>
-  <testcase name="addgetCost_returnCost_10" classname="EventTest" time="0.001"/>
+  <testcase name="addgetCost_returnCost_10" classname="EventTest" time="0.002"/>
   <testcase name="addFoodPriceToCost_ReturnsCost_10" classname="EventTest" time="0.0"/>
   <testcase name="setgetEntertainmentSelection_returnEntertainmentSelection_Music" classname="EventTest" time="0.0"/>
   <testcase name="setgetBevySelection_returnBevySelection_PeachTea" classname="EventTest" time="0.0"/>
   <testcase name="addFoodPriceToCost_ReturnsCost_5" classname="EventTest" time="0.0"/>
-  <testcase name="setgetNumOfGuests_returnNumOfGuests_17" classname="EventTest" time="0.001"/>
+  <testcase name="setgetNumOfGuests_returnNumOfGuests_17" classname="EventTest" time="0.0"/>
   <testcase name="setgetFoodSelection_returnFoodSelection_InNOut" classname="EventTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
